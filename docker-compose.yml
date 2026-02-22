@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  ref_center:
+    build: ./ref_center
+    volumes:
+      - ./ref_center:/app
+      - /path/to/external/dbs:/data_dbs:ro
